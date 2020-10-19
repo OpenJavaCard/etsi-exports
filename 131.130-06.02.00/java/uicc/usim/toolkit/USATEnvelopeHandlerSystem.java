@@ -1,0 +1,32 @@
+package uicc.usim.toolkit;
+
+/**
+ * The <code>USATEnvelopeHandlerSystem</code> class provides the means to retrieve an instance of
+ * an Object implementing the <code>USATEnvelopeHandler</code> interface.<p>
+ *
+ *
+ * @version    2.0.0
+ * @author     3GPP T3 API
+ * @see USATEnvelopeHandler
+ */
+public final class USATEnvelopeHandlerSystem {
+
+     /**
+      */
+      private USATEnvelopeHandlerSystem() { }
+
+    
+    /**
+     * Returns the single system instance of the <code>USATEnvelopeHandler</code> class.
+     * The applet shall get the reference of the handler at its triggering, the beginning of
+     * the processToolkit method.
+     *
+     * @return     reference of the temporary JCRE entry point object of the <code>USATEnvelopeHandler</code>
+     * @exception  ToolkitException  with the following reason codes: <ul>
+     *      <li><code>HANDLER_NOT_AVAILABLE</code> if the handler is busy.</ul>
+     */
+    public static USATEnvelopeHandler getTheHandler() {
+        return null;
+    }
+}
+

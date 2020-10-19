@@ -1,0 +1,840 @@
+export file {		// uicc/usim/geolocation
+	magic	00FACADE		 // in hex
+	minor_version	1
+	major_version	2
+	constant_pool_count	79
+	constant_pool {
+		Constant_Utf8_info {
+			tag	1
+			length	31
+			bytes	HORIZONTAL_ACCURACY_BEST_EFFORT
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	1
+			bytes	B
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	ConstantValue
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	-127
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	33
+			bytes	VERTICAL_COORDINATE_NOT_REQUESTED
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	-128
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	41
+			bytes	VERTICAL_COORDINATE_REQUESTED_BEST_EFFORT
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	29
+			bytes	HORIZONTAL_VELOCITY_REQUESTED
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	1
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	27
+			bytes	VERTICAL_VELOCITY_REQUESTED
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	3
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	44
+			bytes	UNCERTAINTY_OF_HORIZONTAL_VELOCITY_REQUESTED
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	5
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	42
+			bytes	UNCERTAINTY_OF_VERTICAL_VELOCITY_REQUESTED
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	17
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	26
+			bytes	GAD_SHAPES_ELLIPSOID_POINT
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	50
+			bytes	GAD_SHAPES_ELLIPSOID_POINT_WITH_UNCERTAINTY_CIRCLE
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	2
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	51
+			bytes	GAD_SHAPES_ELLIPSOID_POINT_WITH_UNCERTAINTY_ELLIPSE
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	4
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	40
+			bytes	GAD_SHAPES_ELLIPSOID_POINT_WITH_ALTITUDE
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	8
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	18
+			bytes	GAD_SHAPES_POLYGON
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	16
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	66
+			bytes	GAD_SHAPES_ELLIPSOID_POINT_WITH_ALTITUDE_AND_UNCERTAINTY_ELLIPSOID
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	32
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	24
+			bytes	GAD_SHAPES_ELLIPSOID_ARC
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	64
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	setHorizontalAccuracy
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	(B)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	setVerticalCoordinate
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	11
+			bytes	setVelocity
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	20
+			bytes	setAcceptedGADShapes
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	25
+			bytes	performGeoLocationRequest
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	72
+			bytes	(Luicc/toolkit/ProactiveHandler;)Luicc/usim/geolocation/GeoLocationInfo;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	33
+			bytes	uicc/usim/geolocation/GeoLocation
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	35		// uicc/usim/geolocation/GeoLocation
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	java/lang/Object
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	37		// java/lang/Object
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	11
+			bytes	getLatitude
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	3
+			bytes	()I
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	12
+			bytes	getLongitude
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	11
+			bytes	getAltitude
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	11
+			bytes	getVelocity
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	getResponseBuffer
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	([BSS)S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	37
+			bytes	uicc/usim/geolocation/GeoLocationInfo
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	46		// uicc/usim/geolocation/GeoLocationInfo
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	20
+			bytes	INCORRECT_PARAMETERS
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	1
+			bytes	S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	17
+			bytes	FUNCTION_DISABLED
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	25
+			bytes	UNABLE_TO_PROCESS_COMMAND
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	26
+			bytes	UNABLE_TO_ACHIEVE_ACCURACY
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	INCORRECT_INFORMATION
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	<init>
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	(S)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	throwIt
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	equals
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	(Ljava/lang/Object;)Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	getReason
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	3
+			bytes	()S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	setReason
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	42
+			bytes	uicc/usim/geolocation/GeoLocationException
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	62		// uicc/usim/geolocation/GeoLocationException
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	java/lang/Throwable
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	64		// java/lang/Throwable
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	java/lang/Exception
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	66		// java/lang/Exception
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	26
+			bytes	java/lang/RuntimeException
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	68		// java/lang/RuntimeException
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	39
+			bytes	javacard/framework/CardRuntimeException
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	70		// javacard/framework/CardRuntimeException
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	3
+			bytes	()V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	buildGeoLocation
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	97
+			bytes	(Luicc/toolkit/TerminalProfile;Luicc/toolkit/ToolkitRegistry;)Luicc/usim/geolocation/GeoLocation;
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	40
+			bytes	uicc/usim/geolocation/GeoLocationBuilder
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	75		// uicc/usim/geolocation/GeoLocationBuilder
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	uicc/usim/geolocation
+		}
+		CONSTANT_Package_info {
+			tag	13
+			flags	1
+			name_index	77		// uicc/usim/geolocation
+			minor_version	0
+			major_version	1
+			aid_length	16
+			aid	0xA0:0x0:0x0:0x0:0x87:0x10:0x5:0xFF:0xFF:0xFF:0xFF:0x89:0x13:0x30:0x0:0x0
+		}
+	}
+	this_package	78
+	export_class_count	4
+	export_classes {
+		class_info {		// uicc/usim/geolocation/GeoLocation
+			token	0
+			access_flags	public abstract interface
+			name_index	36		// uicc/usim/geolocation/GeoLocation
+			export_supers_count	1
+			supers {
+				constant_pool_index	38		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	14
+			fields {
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	0		// HORIZONTAL_ACCURACY_BEST_EFFORT
+				Descriptor_Index	1		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	2		// ConstantValue
+					attribute_length	2
+					constantvalue_index	3		// value = -127
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	4		// VERTICAL_COORDINATE_NOT_REQUESTED
+				Descriptor_Index	1		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	2		// ConstantValue
+					attribute_length	2
+					constantvalue_index	5		// value = -128
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	6		// VERTICAL_COORDINATE_REQUESTED_BEST_EFFORT
+				Descriptor_Index	1		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	2		// ConstantValue
+					attribute_length	2
+					constantvalue_index	3		// value = -127
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	7		// HORIZONTAL_VELOCITY_REQUESTED
+				Descriptor_Index	1		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	2		// ConstantValue
+					attribute_length	2
+					constantvalue_index	8		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	9		// VERTICAL_VELOCITY_REQUESTED
+				Descriptor_Index	1		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	2		// ConstantValue
+					attribute_length	2
+					constantvalue_index	10		// value = 3
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	11		// UNCERTAINTY_OF_HORIZONTAL_VELOCITY_REQUESTED
+				Descriptor_Index	1		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	2		// ConstantValue
+					attribute_length	2
+					constantvalue_index	12		// value = 5
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	13		// UNCERTAINTY_OF_VERTICAL_VELOCITY_REQUESTED
+				Descriptor_Index	1		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	2		// ConstantValue
+					attribute_length	2
+					constantvalue_index	14		// value = 17
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	15		// GAD_SHAPES_ELLIPSOID_POINT
+				Descriptor_Index	1		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	2		// ConstantValue
+					attribute_length	2
+					constantvalue_index	8		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	16		// GAD_SHAPES_ELLIPSOID_POINT_WITH_UNCERTAINTY_CIRCLE
+				Descriptor_Index	1		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	2		// ConstantValue
+					attribute_length	2
+					constantvalue_index	17		// value = 2
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	18		// GAD_SHAPES_ELLIPSOID_POINT_WITH_UNCERTAINTY_ELLIPSE
+				Descriptor_Index	1		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	2		// ConstantValue
+					attribute_length	2
+					constantvalue_index	19		// value = 4
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	20		// GAD_SHAPES_ELLIPSOID_POINT_WITH_ALTITUDE
+				Descriptor_Index	1		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	2		// ConstantValue
+					attribute_length	2
+					constantvalue_index	21		// value = 8
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	22		// GAD_SHAPES_POLYGON
+				Descriptor_Index	1		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	2		// ConstantValue
+					attribute_length	2
+					constantvalue_index	23		// value = 16
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	24		// GAD_SHAPES_ELLIPSOID_POINT_WITH_ALTITUDE_AND_UNCERTAINTY_ELLIPSOID
+				Descriptor_Index	1		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	2		// ConstantValue
+					attribute_length	2
+					constantvalue_index	25		// value = 32
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	26		// GAD_SHAPES_ELLIPSOID_ARC
+				Descriptor_Index	1		// B
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	2		// ConstantValue
+					attribute_length	2
+					constantvalue_index	27		// value = 64
+				}
+				}
+			}
+			}
+			export_methods_count	5
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	28		// setHorizontalAccuracy
+					Descriptor_Index	29		// (B)V
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	30		// setVerticalCoordinate
+					Descriptor_Index	29		// (B)V
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	31		// setVelocity
+					Descriptor_Index	29		// (B)V
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	32		// setAcceptedGADShapes
+					Descriptor_Index	29		// (B)V
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	33		// performGeoLocationRequest
+					Descriptor_Index	34		// (Luicc/toolkit/ProactiveHandler;)Luicc/usim/geolocation/GeoLocationInfo;
+				}
+			}
+		}
+		class_info {		// uicc/usim/geolocation/GeoLocationInfo
+			token	1
+			access_flags	public abstract interface
+			name_index	47		// uicc/usim/geolocation/GeoLocationInfo
+			export_supers_count	1
+			supers {
+				constant_pool_index	38		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	5
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	39		// getLatitude
+					Descriptor_Index	40		// ()I
+				}
+				method_info {
+					token	1
+					access_flags	public abstract
+					name_index	41		// getLongitude
+					Descriptor_Index	40		// ()I
+				}
+				method_info {
+					token	2
+					access_flags	public abstract
+					name_index	42		// getAltitude
+					Descriptor_Index	40		// ()I
+				}
+				method_info {
+					token	3
+					access_flags	public abstract
+					name_index	43		// getVelocity
+					Descriptor_Index	40		// ()I
+				}
+				method_info {
+					token	4
+					access_flags	public abstract
+					name_index	44		// getResponseBuffer
+					Descriptor_Index	45		// ([BSS)S
+				}
+			}
+		}
+		class_info {		// uicc/usim/geolocation/GeoLocationException
+			token	2
+			access_flags	public
+			name_index	63		// uicc/usim/geolocation/GeoLocationException
+			export_supers_count	5
+			supers {
+				constant_pool_index	38		// java/lang/Object
+				constant_pool_index	65		// java/lang/Throwable
+				constant_pool_index	67		// java/lang/Exception
+				constant_pool_index	69		// java/lang/RuntimeException
+				constant_pool_index	71		// javacard/framework/CardRuntimeException
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	5
+			fields {
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	48		// INCORRECT_PARAMETERS
+				Descriptor_Index	49		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	2		// ConstantValue
+					attribute_length	2
+					constantvalue_index	8		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	50		// FUNCTION_DISABLED
+				Descriptor_Index	49		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	2		// ConstantValue
+					attribute_length	2
+					constantvalue_index	17		// value = 2
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	51		// UNABLE_TO_PROCESS_COMMAND
+				Descriptor_Index	49		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	2		// ConstantValue
+					attribute_length	2
+					constantvalue_index	10		// value = 3
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	52		// UNABLE_TO_ACHIEVE_ACCURACY
+				Descriptor_Index	49		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	2		// ConstantValue
+					attribute_length	2
+					constantvalue_index	19		// value = 4
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	53		// INCORRECT_INFORMATION
+				Descriptor_Index	49		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	2		// ConstantValue
+					attribute_length	2
+					constantvalue_index	12		// value = 5
+				}
+				}
+			}
+			}
+			export_methods_count	5
+			methods {
+				method_info {
+					token	0
+					access_flags	public
+					name_index	54		// <init>
+					Descriptor_Index	55		// (S)V
+				}
+				method_info {
+					token	1
+					access_flags	public static
+					name_index	56		// throwIt
+					Descriptor_Index	55		// (S)V
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	57		// equals
+					Descriptor_Index	58		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public
+					name_index	59		// getReason
+					Descriptor_Index	60		// ()S
+				}
+				method_info {
+					token	2
+					access_flags	public
+					name_index	61		// setReason
+					Descriptor_Index	55		// (S)V
+				}
+			}
+		}
+		class_info {		// uicc/usim/geolocation/GeoLocationBuilder
+			token	3
+			access_flags	public
+			name_index	76		// uicc/usim/geolocation/GeoLocationBuilder
+			export_supers_count	1
+			supers {
+				constant_pool_index	38		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	3
+			methods {
+				method_info {
+					token	0
+					access_flags	public
+					name_index	54		// <init>
+					Descriptor_Index	72		// ()V
+				}
+				method_info {
+					token	1
+					access_flags	public static
+					name_index	73		// buildGeoLocation
+					Descriptor_Index	74		// (Luicc/toolkit/TerminalProfile;Luicc/toolkit/ToolkitRegistry;)Luicc/usim/geolocation/GeoLocation;
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	57		// equals
+					Descriptor_Index	58		// (Ljava/lang/Object;)Z
+				}
+			}
+		}
+	}
+}

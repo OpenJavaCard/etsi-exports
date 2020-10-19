@@ -1,0 +1,26 @@
+package uicc.usim.toolkit;
+
+//import uicc.toolkit.ToolkitConstants;
+
+/**
+ *  <code>ToolkitConstants</code> encapsulates constants related to the USAT Toolkit applets.
+ *
+ * @version    2.0.0
+ * @author     3GPP T3 API
+ */
+public interface ToolkitConstants extends uicc.toolkit.ToolkitConstants { 
+    /** Event : Envelope SMS-PP Data Download (31.115 formatted)  = 2        */
+    public static final byte EVENT_FORMATTED_SMS_PP_ENV                 = (short)2;
+     /** Event : Update Record EF sms APDU     (31.115 formatted)  = 3        */
+    public static final byte EVENT_FORMATTED_SMS_PP_UPD                 = (short)3;
+    /** Event : Envelope SMS-PP Data Download unformatted sms  = 4          */
+    public static final byte EVENT_UNFORMATTED_SMS_PP_ENV               = (short)4;
+    /** Event : Update Record EFsms APDU      unformatted sms   = 5         */
+    public static final byte EVENT_UNFORMATTED_SMS_PP_UPD               = (short)5;
+    /** Event : Cell Broadcast Data Download  = 6                           */
+    public static final byte EVENT_UNFORMATTED_SMS_CB                   = (short)6;
+    /** Event : MO Short Message Control by SIM = 10                        */
+    public static final byte EVENT_MO_SHORT_MESSAGE_CONTROL_BY_SIM      = (short)10;
+    /** Event : Cell Broadcast Data Download Formatted = 24                 */
+    public static final byte EVENT_FORMATTED_SMS_CB                     = (short)24;
+}

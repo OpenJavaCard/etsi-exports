@@ -1,0 +1,427 @@
+export file {		// uicc/usim/suci
+	magic	00FACADE		 // in hex
+	minor_version	1
+	major_version	2
+	constant_pool_count	46
+	constant_pool {
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	getSUCI
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	([BSS)S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	29
+			bytes	uicc/usim/suci/SUCICalculator
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	2		// uicc/usim/suci/SUCICalculator
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	16
+			bytes	java/lang/Object
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	4		// java/lang/Object
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	28
+			bytes	javacard/framework/Shareable
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	6		// javacard/framework/Shareable
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	NO_USIM
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	1
+			bytes	S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	13
+			bytes	ConstantValue
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	1
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	18
+			bytes	ALREADY_REGISTERED
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	2
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	NOT_REGISTERED
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	3
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	WRONG_INTERFACE
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	4
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	15
+			bytes	WRONG_OWNERSHIP
+		}
+		Constant_Integer_info {
+			tag	3
+			bytes	5
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	<init>
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	4
+			bytes	(S)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	7
+			bytes	throwIt
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	6
+			bytes	equals
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	21
+			bytes	(Ljava/lang/Object;)Z
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	getReason
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	3
+			bytes	()S
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	9
+			bytes	setReason
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	28
+			bytes	uicc/usim/suci/SUCIException
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	28		// uicc/usim/suci/SUCIException
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	java/lang/Throwable
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	30		// java/lang/Throwable
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	19
+			bytes	java/lang/Exception
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	32		// java/lang/Exception
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	26
+			bytes	java/lang/RuntimeException
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	34		// java/lang/RuntimeException
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	39
+			bytes	javacard/framework/CardRuntimeException
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	36		// javacard/framework/CardRuntimeException
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	22
+			bytes	registerSUCICalculator
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	58
+			bytes	(Ljavacard/framework/AID;Luicc/usim/suci/SUCICalculator;)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	34
+			bytes	(Luicc/usim/suci/SUCICalculator;)V
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	24
+			bytes	deregisterSUCICalculator
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	27
+			bytes	uicc/usim/suci/SUCIRegistry
+		}
+		Constant_Classref_info {
+			tag	7
+			name_index	42		// uicc/usim/suci/SUCIRegistry
+		}
+		Constant_Utf8_info {
+			tag	1
+			length	14
+			bytes	uicc/usim/suci
+		}
+		CONSTANT_Package_info {
+			tag	13
+			flags	1
+			name_index	44		// uicc/usim/suci
+			minor_version	0
+			major_version	1
+			aid_length	16
+			aid	0xA0:0x0:0x0:0x0:0x87:0x10:0x5:0xFF:0xFF:0xFF:0xFF:0x89:0x13:0x40:0x0:0x0
+		}
+	}
+	this_package	45
+	export_class_count	3
+	export_classes {
+		class_info {		// uicc/usim/suci/SUCICalculator
+			token	0
+			access_flags	public abstract interface shareable
+			name_index	3		// uicc/usim/suci/SUCICalculator
+			export_supers_count	1
+			supers {
+				constant_pool_index	5		// java/lang/Object
+			}
+			export_interfaces_count	1
+			interfaces {
+				constant_pool_index	7		// javacard/framework/Shareable
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	1
+			methods {
+				method_info {
+					token	0
+					access_flags	public abstract
+					name_index	0		// getSUCI
+					Descriptor_Index	1		// ([BSS)S
+				}
+			}
+		}
+		class_info {		// uicc/usim/suci/SUCIException
+			token	1
+			access_flags	public
+			name_index	29		// uicc/usim/suci/SUCIException
+			export_supers_count	5
+			supers {
+				constant_pool_index	5		// java/lang/Object
+				constant_pool_index	31		// java/lang/Throwable
+				constant_pool_index	33		// java/lang/Exception
+				constant_pool_index	35		// java/lang/RuntimeException
+				constant_pool_index	37		// javacard/framework/CardRuntimeException
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	5
+			fields {
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	8		// NO_USIM
+				Descriptor_Index	9		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	10		// ConstantValue
+					attribute_length	2
+					constantvalue_index	11		// value = 1
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	12		// ALREADY_REGISTERED
+				Descriptor_Index	9		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	10		// ConstantValue
+					attribute_length	2
+					constantvalue_index	13		// value = 2
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	14		// NOT_REGISTERED
+				Descriptor_Index	9		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	10		// ConstantValue
+					attribute_length	2
+					constantvalue_index	15		// value = 3
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	16		// WRONG_INTERFACE
+				Descriptor_Index	9		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	10		// ConstantValue
+					attribute_length	2
+					constantvalue_index	17		// value = 4
+				}
+				}
+			}
+			field_info {
+				token	255
+				access_flags	public static final
+				name_index	18		// WRONG_OWNERSHIP
+				Descriptor_Index	9		// S
+				attributes_count	1
+				attributes {
+				ConstantValue_attribute {
+					attribute_name_index	10		// ConstantValue
+					attribute_length	2
+					constantvalue_index	19		// value = 5
+				}
+				}
+			}
+			}
+			export_methods_count	5
+			methods {
+				method_info {
+					token	0
+					access_flags	public
+					name_index	20		// <init>
+					Descriptor_Index	21		// (S)V
+				}
+				method_info {
+					token	1
+					access_flags	public static
+					name_index	22		// throwIt
+					Descriptor_Index	21		// (S)V
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	23		// equals
+					Descriptor_Index	24		// (Ljava/lang/Object;)Z
+				}
+				method_info {
+					token	1
+					access_flags	public
+					name_index	25		// getReason
+					Descriptor_Index	26		// ()S
+				}
+				method_info {
+					token	2
+					access_flags	public
+					name_index	27		// setReason
+					Descriptor_Index	21		// (S)V
+				}
+			}
+		}
+		class_info {		// uicc/usim/suci/SUCIRegistry
+			token	2
+			access_flags	public
+			name_index	43		// uicc/usim/suci/SUCIRegistry
+			export_supers_count	1
+			supers {
+				constant_pool_index	5		// java/lang/Object
+			}
+			export_interfaces_count	0
+			interfaces {
+			}
+			export_fields_count	0
+			fields {
+			}
+			export_methods_count	5
+			methods {
+				method_info {
+					token	0
+					access_flags	public static
+					name_index	38		// registerSUCICalculator
+					Descriptor_Index	39		// (Ljavacard/framework/AID;Luicc/usim/suci/SUCICalculator;)V
+				}
+				method_info {
+					token	1
+					access_flags	public static
+					name_index	38		// registerSUCICalculator
+					Descriptor_Index	40		// (Luicc/usim/suci/SUCICalculator;)V
+				}
+				method_info {
+					token	2
+					access_flags	public static
+					name_index	41		// deregisterSUCICalculator
+					Descriptor_Index	39		// (Ljavacard/framework/AID;Luicc/usim/suci/SUCICalculator;)V
+				}
+				method_info {
+					token	3
+					access_flags	public static
+					name_index	41		// deregisterSUCICalculator
+					Descriptor_Index	40		// (Luicc/usim/suci/SUCICalculator;)V
+				}
+				method_info {
+					token	0
+					access_flags	public
+					name_index	23		// equals
+					Descriptor_Index	24		// (Ljava/lang/Object;)Z
+				}
+			}
+		}
+	}
+}
