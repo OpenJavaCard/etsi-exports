@@ -1,6 +1,30 @@
 ## Export files for ETSI APIs
 
-### Commands used to extract ETSI 131.130
+ETSI standards specify various JavaCard APIs related to SIM cards.
+
+This repository contains the export files for many of these APIs.
+
+It has been created as a dependency submodule for packages using these APIs.
+
+### Standards included
+
+| Standard | Description  | Packages                            |
+| -------- | ------------ | ----------------------------------- |
+| 131.130  | USIM APIs    | uicc.usim.access, uicc.usim.toolkit |
+| 131.133  | ISIM APIs    | uicc.isim.access                    |
+| 143.019  | SIM APIs     | sim.access, sim.toolkit             |
+
+### Source of files
+
+All files have been extracted from ZIP files on the ETSI portal.
+
+No files have been modified without leaving a commit in git history.
+
+The following commands have been used to extract them originally,
+but some versions may require additional fixups that may not have
+been documented.
+
+#### Commands used to extract ETSI 131.130
 
 ```
 for f in ../131.130/*/*.zip; do patool extract $f; done
@@ -14,11 +38,21 @@ done
 # java
 for d in 131.130-*; do pushd $d; unzip *_Annex_A_[Jj]ava.zip; popd; done
 for d in 131.130-*; do pushd $d; mv *_Annex_A_[Jj]ava java; popd; done
-for d in 131.130-*; do pushd $d; if [ -d uicc ]; then mkdir java; mv uicc java/; fi; popd; done
+for d in 131.130-*; do pushd $d;
+  if [ -d uicc ]; then
+    mkdir java; mv uicc java/;
+  fi;
+  popd;
+done
 # exports
 for d in 131.130-*; do pushd $d; unzip *_Annex_B_Export_[Ff]iles.zip; popd; done
 for d in 131.130-*; do pushd $d; mv *_Annex_B_Export_[Ff]iles exports; popd; done
-for d in 131.130-*; do pushd $d; if [ -d uicc ]; then mkdir exports; mv uicc exports/; fi; popd; done
+for d in 131.130-*; do pushd $d;
+  if [ -d uicc ]; then
+    mkdir exports; mv uicc exports/;
+  fi;
+  popd;
+done
 # jar
 for d in 131.130-*; do pushd $d; mv *.jar usim-api.jar; popd; done
 # add to git
@@ -27,7 +61,7 @@ for d in 131.130-*; do pushd $d; git add exports java javadoc *.jar; popd; done
 git add 131.130-*/*.java
 ```
 
-### Commands used to extract ETSI 131.133
+#### Commands used to extract ETSI 131.133
 
 ```
 for f in ../131.133/*/*.zip; do patool extract $f; done
@@ -47,7 +81,7 @@ for d in 131.133-*; do pushd $d; mv *.jar isim-api.jar; popd; done
 for d in 131.133-*; do pushd $d; git add exports java javadoc *.jar; popd; done
 ```
 
-### Commands used to extract ETSI 143.019
+#### Commands used to extract ETSI 143.019
 
 ```
 for f in ../143.019/*/*.zip; do patool extract $f; done
