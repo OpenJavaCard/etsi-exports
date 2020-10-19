@@ -1,6 +1,6 @@
-## Export files for ETSI APIs
+## Export files for ETSI/3GPP APIs
 
-ETSI standards specify various JavaCard APIs related to SIM cards.
+ETSI/3GPP standards specify various JavaCard APIs related to SIM cards.
 
 This repository contains the export files for many of these APIs.
 
@@ -8,11 +8,11 @@ It has been created as a dependency submodule for packages using these APIs.
 
 ### Standards included
 
-| Standard | Description  | Packages                            |
-| -------- | ------------ | ----------------------------------- |
-| 131.130  | USIM APIs    | uicc.usim.access, uicc.usim.toolkit |
-| 131.133  | ISIM APIs    | uicc.isim.access                    |
-| 143.019  | SIM APIs     | sim.access, sim.toolkit             |
+| ETSI    | 3GPP   | Purpose      | Packages                            |
+| ------- | ------ |------------- | ----------------------------------- |
+| 131.130 | 31.130 | USIM APIs    | uicc.usim.access, uicc.usim.toolkit |
+| 131.133 | 31.133 | ISIM APIs    | uicc.isim.access                    |
+| 143.019 | 43.019 | SIM APIs     | sim.access, sim.toolkit             |
 
 ### Source of files
 
